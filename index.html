@@ -65,7 +65,17 @@
           <h1 class="hero-title">
             Эффективные решения <span class="indent">для вашего бизнеса</span>
           </h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close class="modal-icon-close">
+                <svg width="11" height="11  ">
+                  <use class="" href="./images/sprite.svg#icon-close-black"></use>
+                </svg>
+              </button>
+              <p></p>
+            </div>
+          </div>
         </div>
       </section>
       <section class="features section-no-padding-btm features-list">
@@ -124,28 +134,37 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="site-ul work-list">
             <li class="item">
-              <img
-                src="./images/about-img-1.jpeg"
-                alt="Декстопные приложения"
-                width="370"
-                height="294"
-              />
+              <div class="work-img-wrapper">
+                <img
+                  src="./images/about-img-1.jpeg"
+                  alt="Декстопные приложения"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-img-wrapper-item">Десктопные приложения</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/about-img-2.jpeg"
-                alt="Мобильные приложения"
-                width="370"
-                height="294"
-              />
+              <div class="work-img-wrapper">
+                <img
+                  src="./images/about-img-2.jpeg"
+                  alt="Мобильные приложения"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-img-wrapper-item">Мобильные приложения</p>
+              </div>
             </li>
             <li class="item">
-              <img
-                src="./images/about-img-3.jpeg"
-                alt="Дизайнерские решения"
-                width="370"
-                height="294"
-              />
+              <div class="work-img-wrapper">
+                <img
+                  src="./images/about-img-3.jpeg"
+                  alt="Дизайнерские решения"
+                  width="370"
+                  height="294"
+                />
+                <p class="work-img-wrapper-item">Дизайнерские решения</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -429,5 +448,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
